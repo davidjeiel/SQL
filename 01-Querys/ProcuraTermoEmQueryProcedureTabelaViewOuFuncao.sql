@@ -2,6 +2,11 @@ USE [BASE DE DADOS A VERIFICAR]
 GO
  
 -- Iniciando a pesquisa nas tabelas de sistemas
+-- O tipo de objeto necessita ser:
+--    "P" para procedure
+--    "V" para view
+--    "T" para tabelas
+--    "F" para funções
  
 SELECT A.NAME, A.TYPE, B.TEXT
   FROM SYSOBJECTS  A (nolock)
