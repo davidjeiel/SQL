@@ -1,16 +1,16 @@
-USE [DB5469_GEATO03]
+USE [BASE_DE_DADOS]
 GO 
 create procedure LOCALIZA_TERMO_EM_QUERY
 	@TERMO AS VARCHAR(MAX),
 	/**********************************************************************
-		Informação a ser procurada no corpo da procedure, funcao ou view
+		InformaÃ§Ã£o a ser procurada no corpo da procedure, funcao ou view
 		   Exemplo: "into dw_siconv" ou "from dbo.tb_tarifa_gestor"
 	***********************************************************************/
 	
 	@TIPO AS VARCHAR(1)	
 	/**************************************** 
 		Tipo de objeto a ser localizado 
-		-- U => Tabela Usuário
+		-- U => Tabela UsuÃ¡rio
 		-- S => Tabela de sistema
 		-- P => Procedure
 		-- V => View
